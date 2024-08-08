@@ -4,8 +4,7 @@ import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useEffect, useState } from "react";
 import Loader from "./componants/Loader";
-import ErrorBoundary from "./Errors/ErrorBoundary";
-import ErrorPage from "./Errors/errors";
+
 
 const queryClient = new QueryClient();
 function App() {
@@ -23,7 +22,6 @@ function App() {
     return <Loader />;
   }
   return (
-    <ErrorBoundary fallback={<ErrorPage />}>
       <QueryClientProvider client={queryClient}>
         <Toaster
           position="top-center"
@@ -37,7 +35,6 @@ function App() {
         />
         <RouterProvider router={router} />
       </QueryClientProvider>
-    </ErrorBoundary>
   );
 }
 
