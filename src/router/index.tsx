@@ -21,7 +21,7 @@ import ErrorBoundary from "../Errors/ErrorBoundary";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <ErrorBoundary fallback={<ErrorPage />}>
+
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
@@ -32,7 +32,6 @@ const router = createBrowserRouter(
         <Route path="/error" element={<AuthErrors />}></Route>
         <Route path="/payment" element={<Payment />} />
         <Route path="/logout" element={<Logout />} />
-      </ErrorBoundary>
     </>
   )
 );
