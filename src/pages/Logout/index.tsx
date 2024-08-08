@@ -7,7 +7,6 @@ export default function Index() {
   const navigate = useNavigate();
   const handelLogout = async () => {
     const response = await logout("users/logout");
-    console.log(response);
     if (response?.status === "success") {
       localStorage.removeItem("jwt");
       navigate("/login", { replace: true });
