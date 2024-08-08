@@ -22,16 +22,16 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
 
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/register" element={<Register />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/store" element={<Store />}></Route>
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/player/:id" element={<Player />}></Route>
-        <Route path="/news/:id" element={<News />}></Route>
-        <Route path="/error" element={<AuthErrors />}></Route>
-        <Route path="/payment" element={<Payment />} />
-        <Route path="/logout" element={<Logout />} />
+        <Route path="/" element={<HomePage />} errorElement={<ErrorPage />}></Route>
+        <Route path="/register" element={<Register />} errorElement={<ErrorPage />}></Route>
+        <Route path="/login" element={<Login />} errorElement={<ErrorPage />}></Route>
+        <Route path="/store" element={<Store />} errorElement={<ErrorPage />}></Route>
+        <Route path="/cart" element={<Cart />} errorElement={<ErrorPage />}/>
+        <Route path="/player/:id" element={<Player />} errorElement={<ErrorPage />}></Route>
+        <Route path="/news/:id" element={<News />} errorElement={<ErrorPage />}></Route>
+        <Route path="/error" element={<AuthErrors />} errorElement={<ErrorPage />}></Route>
+        <Route path="/payment" element={<Payment />} errorElement={<ErrorPage />}/>
+        <Route path="/logout" element={<Logout />}errorElement={<ErrorPage />} />
     </>
   )
 );
