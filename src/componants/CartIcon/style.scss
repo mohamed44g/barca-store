@@ -1,0 +1,22 @@
+@import "../../assets/style/colors.scss";
+  .cart-amount {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart-amount p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .Store-icon {
+    width: 37px;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+  }

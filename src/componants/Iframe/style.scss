@@ -1,0 +1,42 @@
+.Video {
+  width: 34%;
+  height: 250px;
+  padding: 0;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+  .Video {
+    width: 95%;
+    height: 194px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .Video {
+    width: 90%;
+    height: 198px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .Video {
+    width: 86%;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .Video {
+    width: 84%;
+    height: 242px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .Video {
+    width: 64%;
+    height: 249px;
+    padding: 0;
+  }
+}

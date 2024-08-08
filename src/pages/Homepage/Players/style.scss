@@ -1,0 +1,47 @@
+@import "../../../assets/style/colors.scss";
+
+.Players {
+  .Player-card {
+    width: 90%;
+    margin-top: 50px;
+    margin-inline: 20px;
+    cursor: pointer;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .Players {
+    .Player-card {
+      width: 75%;
+      height: 270px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .Players {
+    .Player-card {
+      width: 75%;
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .Players {
+    .Player-card {
+      width: 70%;
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Players {
+    .Player-card {
+      width: 70%;
+      height: 300px;
+    }
+  }
+}

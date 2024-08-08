@@ -1,0 +1,13 @@
+.Title {
+  margin: 200px 0 150px 0;
+}
+.Title::before, .Title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2.5px;
+  margin: 0 8px 0 8px;
+  position: relative;
+  top: -8px;
+  background: #cd122d;
+}/*# sourceMappingURL=style.css.map */

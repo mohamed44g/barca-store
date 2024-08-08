@@ -1,0 +1,16 @@
+@import "../../assets/style/colors.scss";
+.Title {
+  margin: 200px 0 100px 0;
+  visibility: hidden;
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 2.5px;
+    margin: 0 8px 0 8px;
+    position: relative;
+    top: -8px;
+    background: $primary-color;
+  }
+}

@@ -1,0 +1,73 @@
+.Next-match-card {
+  width: 60%;
+  margin: 0 auto;
+}
+.Next-match-card .team1 img,
+.Next-match-card .team2 img {
+  width: 100px;
+  height: 100px;
+}
+.Next-match-card .RealMadrid img {
+  width: 80px;
+  height: 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .Next-match-card {
+    width: 95%;
+  }
+  .Next-match-card .team1 img,
+  .Next-match-card .team2 img {
+    width: 60px;
+    height: 60px;
+  }
+  .Next-match-card .RealMadrid img {
+    width: 50px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .Next-match-card {
+    width: 85%;
+  }
+  .Next-match-card .team1 img,
+  .Next-match-card .team2 img {
+    width: 60px;
+    height: 60px;
+  }
+  .Next-match-card .RealMadrid img {
+    width: 50px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .Next-match-card {
+    width: 70%;
+  }
+  .Next-match-card .team1 img,
+  .Next-match-card .team2 img {
+    width: 70px;
+    height: 70px;
+  }
+  .Next-match-card .RealMadrid img {
+    width: 60px;
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .Next-match-card {
+    width: 60%;
+  }
+  .Next-match-card .team1 img,
+  .Next-match-card .team2 img {
+    width: 85px;
+    height: 85px;
+  }
+  .Next-match-card .RealMadrid img {
+    width: 80px;
+    height: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */

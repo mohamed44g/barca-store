@@ -1,0 +1,38 @@
+.store-card {
+  width: 60%;
+}
+.store-card .store-card-img img {
+  width: 350px;
+  height: 345px;
+  border-radius: 20px;
+}
+.store-card .store-card-data {
+  list-style: none;
+  padding: 0;
+}
+.store-card .rate {
+  margin-right: 5px;
+}
+.store-card .store-card-btn {
+  width: 120px;
+  height: 50px;
+  background-color: #cd122d;
+  color: #f6f7f9;
+}
+.store-card .amount {
+  width: 130px;
+  height: 50px;
+  padding: 0 8px;
+  background-color: #333;
+  color: #f6f7f9;
+  border-radius: 10px;
+}
+.store-card .btn-plus,
+.store-card .btn-minus {
+  background-color: transparent;
+  border: 0;
+  color: #f6f7f9;
+}
+.store-card .amount p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

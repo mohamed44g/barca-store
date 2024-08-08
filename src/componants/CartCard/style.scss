@@ -1,0 +1,43 @@
+@import "../../assets/style/colors.scss";
+
+.Cart {
+  width: 60%;
+  margin: 100px auto;
+
+  .Cart-card {
+    margin-bottom: 50px;
+    img {
+      width: 130px;
+      height: 125px;
+      border-radius: 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .Cart {
+    width: 100%;
+    padding: 20px;
+
+    .Cart-card {
+      img {
+        width: 100px;
+        height: 95px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) and (max-width: 996px) {
+  .Cart {
+    width: 80%;
+  }
+}
+

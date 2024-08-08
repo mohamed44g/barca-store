@@ -1,0 +1,17 @@
+<!-- public/iframeContent.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe Content</title>
+  </head>
+  <body>
+    <h1>Click inside this iframe</h1>
+    <script>
+      document.addEventListener("click", function () {
+        window.parent.postMessage("iframeClicked", "*");
+      });
+    </script>
+  </body>
+</html>

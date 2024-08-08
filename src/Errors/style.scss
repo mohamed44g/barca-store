@@ -1,0 +1,17 @@
+@import "../assets//style/colors.scss";
+.Error {
+  height: 100vh;
+
+  .Error_message {
+    margin-top: 20px;
+  }
+
+  .Error-btn {
+    background-color: $primary-color;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+  }
+}

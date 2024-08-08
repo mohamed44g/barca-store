@@ -1,0 +1,14 @@
+.Footer {
+  background-color: rgb(21, 22, 54);
+  height: 200px;
+}
+.Footer .Footer-logo img {
+  width: 50px;
+  height: 50px;
+}
+.Footer p {
+  margin: 0;
+}
+.Footer .Footer-logo-text {
+  letter-spacing: 3px;
+}/*# sourceMappingURL=style.css.map */

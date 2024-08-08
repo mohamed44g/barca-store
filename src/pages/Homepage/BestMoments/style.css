@@ -1,0 +1,14 @@
+.BestMoments {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 200px;
+  background: rgb(62, 26, 41);
+  background: linear-gradient(90deg, rgba(62, 26, 41, 0.5) 45%, rgba(21, 22, 54, 0.5) 56%);
+}
+.BestMoments .BestMoments-cards {
+  padding-bottom: 150px;
+}
+.BestMoments .BestMoments-title {
+  color: #cd122d;
+}/*# sourceMappingURL=style.css.map */

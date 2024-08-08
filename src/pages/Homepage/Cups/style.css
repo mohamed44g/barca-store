@@ -1,0 +1,19 @@
+.Cups-cards {
+  margin-top: 200px;
+  height: 150px;
+  background-color: #120f24;
+}
+.Cups-cards .Cups-card {
+  width: 24%;
+  height: 60px;
+  background-image: url("../../../assets/images/horizontal-flash.jpg");
+  color: #fdc52c;
+  gap: 10px;
+}
+.Cups-cards .Cups-card p {
+  margin: 0;
+}
+.Cups-cards .Cups-card .Cup-icon {
+  height: 40px;
+  width: 40px;
+}/*# sourceMappingURL=style.css.map */

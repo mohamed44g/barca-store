@@ -1,0 +1,41 @@
+.Banner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  top: -50px;
+}
+
+.Banner-track {
+  display: flex;
+  width: calc(460px * 10);
+  animation: scroll 30s linear infinite;
+}
+
+.Banner-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .Banner-track {
+    width: calc(400px * 10);
+    animation: scroll 20s linear infinite;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}

@@ -1,0 +1,70 @@
+@import "../../../assets/style/colors.scss";
+.Cups-cards {
+  margin-top: 200px;
+  height: 150px;
+  background-color: #120f24;
+  .Cups-card {
+    width: 24%;
+    height: 60px;
+    background-image: url("../../../assets/images/horizontal-flash.jpg");
+    color: #fdc52c;
+    gap: 10px;
+
+    p {
+      margin: 0;
+    }
+
+    .Cup-icon {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .Cups-cards {
+    margin-bottom: 50px;
+    height: fit-content;
+    .Cups-card {
+      width: 100%;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .Cups-cards {
+    margin-bottom: 50px;
+    height: fit-content;
+    .Cups-card {
+      width: 80%;
+      margin: 0 auto 20px auto;
+      gap: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .Cups-cards {
+    margin-bottom: 50px;
+    height: fit-content;
+    margin: 0 0px 50px 0;
+    .Cups-card {
+      width: 47%;
+      margin: 7px 7px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .Cups-cards {
+    margin-bottom: 50px;
+    height: fit-content;
+    margin: 0 0px 50px 0;
+    .Cups-card {
+      width: 47%;
+      margin: 7px 7px;
+    }
+  }
+}

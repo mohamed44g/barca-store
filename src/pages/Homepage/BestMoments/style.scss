@@ -1,0 +1,19 @@
+@import "../../../assets/style/colors.scss";
+.BestMoments {
+  width: 100%;
+  height: fit-content;
+  margin-top: 200px;
+  background: linear-gradient(
+      90deg,
+      rgba(62, 26, 41, 0.6) 45%,
+      rgba(21, 22, 54, 0.6) 56%
+    );
+
+  .BestMoments-cards {
+    padding-bottom: 150px;
+  }
+
+  h2 {
+    padding-top: 100px;
+  }
+}

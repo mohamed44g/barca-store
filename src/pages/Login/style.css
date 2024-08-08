@@ -1,0 +1,13 @@
+.Register {
+  height: 100vh;
+}
+.Register .Register-form {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+}
+.Register .error {
+  width: 85%;
+  align-self: center;
+  color: #cd122d;
+}/*# sourceMappingURL=style.css.map */

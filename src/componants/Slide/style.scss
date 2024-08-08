@@ -1,0 +1,89 @@
+@import "../../assets/style/colors.scss";
+.slide-veiw {
+  height: 100vh;
+  cursor: pointer;
+  position: relative;
+  .slide-img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    background: rgb(62, 26, 41);
+    background: linear-gradient(
+      90deg,
+      rgba(62, 26, 41, 0.3) 36%,
+      rgba(21, 22, 54, 0.3) 56%
+    );
+  }
+
+  .slide-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    z-index: 1;
+    color: $primary-text-color;
+    h1 {
+      font-weight: 100;
+      color: $primary-color;
+      letter-spacing: 2px;
+    }
+    .title-highlight {
+      font-size: 5rem;
+      font-weight: 900;
+    }
+
+    h2 {
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .slide-veiw {
+    height: 80vh;
+    .slide-content {
+      .title-highlight {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .slide-veiw {
+    .slide-content {
+      .title-highlight {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .slide-veiw {
+    .slide-content {
+      .title-highlight {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .slide-veiw {
+    .slide-content {
+      .title-highlight {
+        font-size: 4rem;
+      }
+    }
+  }
+}

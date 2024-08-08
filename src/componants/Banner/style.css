@@ -1,0 +1,25 @@
+.Banner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  top: -50px;
+}
+
+.Banner-track {
+  display: flex;
+  width: 4600px;
+  animation: scroll 30s linear infinite;
+}
+
+.Banner-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=style.css.map */

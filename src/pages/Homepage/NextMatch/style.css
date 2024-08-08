@@ -1,0 +1,20 @@
+.Next-match {
+  width: 100%;
+  height: 40vh;
+  padding-top: 30px;
+  background-color: #161b22;
+  background: rgb(62, 26, 41);
+  background: linear-gradient(90deg, rgba(62, 26, 41, 0.5) 45%, rgba(21, 22, 54, 0.5) 56%);
+}
+.Next-match .Next-match-title {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30px;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: #cd122d;
+}
+.Next-match .Next-match-slides {
+  height: inherit;
+  margin-top: -30px;
+}/*# sourceMappingURL=style.css.map */

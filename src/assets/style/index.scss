@@ -1,0 +1,59 @@
+@import "./colors.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+}
+
+.fade-in {
+  animation: FadeIn 1.6s ease-in-out both;
+}
+
+.fade-in-up {
+  animation: FadeInUp 1.2s ease-in-out both;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes FadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn 1.5s ease-in-out both;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
