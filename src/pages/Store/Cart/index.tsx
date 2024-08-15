@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { getProductsCart } from "../../../apis/getProductCart";
 import Loader from "../../../componants/Loader";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface Iproduct {
   id: string;
@@ -17,7 +17,6 @@ interface Iproduct {
 }
 
 export default function Index() {
-  const navigate = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
   const { loading, cartItems, error } = useSelector(
     (state: RootState) => state?.Cart
@@ -28,17 +27,22 @@ export default function Index() {
     dispatch(getProductsCart());
   }, [dispatch]);
 
-  if (error) {
-    return navigate("/error", {
-      state: {
-        message: "an error occurred please try again later",
-        type: "error",
-      },
-    });
-  }
-
   if (loading === true) {
     return <Loader />;
+  }
+
+  if (error?.response?.status == 401) {
+    return (
+      <div className="Cart_message d-flex justify-content-center align-items-center fs-4">
+        <p>
+          Cart is empty please
+          <Link to={"/login"} className="Login-highlight fw-bold">
+            login
+          </Link>
+          to show products
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -70,7 +74,7 @@ export default function Index() {
           </div>
         </>
       ) : (
-        <div className="Cart_message d-flex justify-content-center align-items-center">
+        <div className="Cart_message d-flex justify-content-center align-items-center fs-4">
           <p>Cart is empty please add some product</p>
         </div>
       )}
