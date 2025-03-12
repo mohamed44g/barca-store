@@ -4,7 +4,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   withCredentials: true,
-  baseURL: "https://barca-store-backend-production.up.railway.app/api/v1/",
+  baseURL: "https://barca-store-backend.vercel.app/api/v1/"
 });
 
 
